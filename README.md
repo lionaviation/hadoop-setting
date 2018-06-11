@@ -1,4 +1,4 @@
-# Hadoop HDFS 配置1234
+# Hadoop HDFS(ViewFS) 配置
 
 ## 服务器部署
 
