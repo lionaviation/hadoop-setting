@@ -41,7 +41,15 @@
 在nn1,nn2,nn3和nn4启动zkfc
     hadoop-daemon.sh start zkfc
     
-### 4、启动HDFS
+### 5、启动HDFS
 在nn1执行
 
     start-dfs.sh
+    
+### 6、为每个命名空间建目录
+在任意一台一台服务器执行
+
+    hdfs dfs -fs hdfs://hadoop-100:9000 -mkdir /tmp
+    hdfs dfs -fs hdfs://hadoop-102:9000 -mkdir /data2
+    
+注：这里假设hadoop-100和hadoop-102是active状态。
