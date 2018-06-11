@@ -20,7 +20,7 @@
     hdfs namenode -format
     hadoop-daemon.sh start namenode
     
-在nn3执行(cluster id在nn1格式化后生成，可以在web界面查看"http://hadoop-100:5700")
+在nn3执行(cluster id在nn1格式化后生成，可以在web界面查看"http://hadoop-100:50070")
     hdfs namenode -format -clusterid <Cluster ID>
     hadoop-daemon.sh start namenode
 
