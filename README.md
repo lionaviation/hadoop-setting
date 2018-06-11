@@ -1,6 +1,6 @@
-#Hadoop HDFS 配置1234
+# Hadoop HDFS 配置1234
 
-##服务器
+## 服务器部署
 
 |IP|Domain|Name Node|Journal Node|ZKFC|Data Node|zookeeper|
 |:--|:--:|:--:|--:|--:|--:|--:|
