@@ -16,11 +16,14 @@
     hadoopp-daemon.sh start journalnode
     
 ### 2、格式化HDFS
-在nn1和nn3执行
-
+在nn1
     hdfs namenode -format
-    hadooop-daemon.sh start namenode
+    hadoop-daemon.sh start namenode
     
+在nn3执行(cluster id在nn1格式化后生成，可以在web界面查看"http://hadoop-100:5700")
+    hdfs namenode -format -clusterid <Cluster ID>
+    hadoop-daemon.sh start namenode
+
 在nn2和nn4执行
 
     hdfs namenode -bootstrapStandby
@@ -30,8 +33,12 @@
     hadoop-daemon.sh stop namenode
     
 ### 3、格式化ZKFS
-
+在nn1,nn2,nn3和nn4执行
     hdfs zkfc -formatZK
+    
+### 4、启动zkfc
+在nn1,nn2,nn3和nn4启动zkfc
+    hadoop-daemon.sh start zkfc
     
 ### 4、启动HDFS
 在nn1执行
