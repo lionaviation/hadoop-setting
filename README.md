@@ -8,3 +8,4 @@
 |192.168.10.102|hadoop-102|nn3(hdfs-ha2)|Y|Y|Y||
 |192.168.10.103|hadoop-103|nn2(hdfs-ha1)||Y||Y|
 |192.168.10.104|hadoop-104|nn4(hdfs-ha2)|Y||Y|Y|
+
