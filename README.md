@@ -10,6 +10,11 @@
 |192.168.10.103|hadoop-103|nn2(hdfs-ha1)| |Y| |Y|
 |192.168.10.104|hadoop-104|nn4(hdfs-ha2)|Y| |Y|Y|
 
+## 前置条件
+### 1、安装hadoop，并配置$HADOOP_HOME和$HADOOP_CONF_DIR
+### 2、安装zookeeper，并配置$ZK_HOME
+### 3、将本工程所有文件复制到每台机器的$HADOOP_HOME/etc/hadoop/中（可能需要覆盖原有文件）
+
 ## 启动过程
 ### 1、同步每台服务器的秘钥，以上五台服务器互相可以免密码ssh登录
 
@@ -28,7 +33,7 @@
     
 查看ClusterID,在nn1执行
     
-    cat $HADOOP_HOME/data/dfs/name/current/VERSION
+    cat $HADOOP_HOME/data/hadoop_tmp_dir/dfs/name/current/VERSION
 
 cat $HADOOP_HOME/data/dfs/name/current/VERSION
 
