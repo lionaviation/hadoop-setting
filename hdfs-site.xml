@@ -21,27 +21,24 @@
 
     <property>
         <name>dfs.namenode.rpc-address.hdfs-ha1.nn1</name>
-        <value>192.168.10.100:9000</value>
+        <value>hadoop-100:9000</value>
         <description>nn1的rpc通信地址</description>
     </property>
     <property>
         <name>dfs.namenode.http-address.hdfs-ha1.nn1</name>
-        <value>192.168.10.100:50070</value>
+        <value>hadoop-100:50070</value>
         <description>nn1的http通信地址</description>
     </property>
      <property>
         <name>dfs.namenode.rpc-address.hdfs-ha1.nn2</name>
-        <value>192.168.10.103:9000</value>
+        <value>hadoop-103:9000</value>
         <description>nn2的rpc通信地址</description>
     </property>
     <property>
         <name>dfs.namenode.http-address.hdfs-ha1.nn2</name>
-        <value>192.168.10.103:50070</value>
+        <value>hadoop-103:50070</value>
         <description>nn2的http通信地址</description>
     </property>
-
-
-
 
     <property>
         <name>dfs.ha.namenodes.hdfs-ha2</name>
@@ -51,28 +48,28 @@
 
     <property>
         <name>dfs.namenode.rpc-address.hdfs-ha2.nn3</name>
-        <value>192.168.10.102:9000</value>
+        <value>hadoop-102:9000</value>
         <description>nn1的rpc通信地址</description>
     </property>
     <property>
         <name>dfs.namenode.http-address.hdfs-ha2.nn3</name>
-        <value>192.168.10.102:50070</value>
+        <value>hadoop-102:50070</value>
         <description>nn1的http通信地址</description>
     </property>
     <property>
         <name>dfs.namenode.rpc-address.hdfs-ha2.nn4</name>
-        <value>192.168.10.104:9000</value>
+        <value>hadoop-104:9000</value>
         <description>nn1的rpc通信地址</description>
     </property>
     <property>
         <name>dfs.namenode.http-address.hdfs-ha2.nn4</name>
-        <value>192.168.10.104:50070</value>
+        <value>hadoop-104:50070</value>
         <description>nn1的http通信地址</description>
     </property>
 
     <property>
         <name>dfs.namenode.shared.edits.dir</name>
-        <value>qjournal://192.168.10.101:8485;192.168.10.102:8485;192.168.10.104:8485/namespace-hdfs-ha1</value>
+        <value>qjournal://hadoop-101:8485;hadoop-102:8485;hadoop-104:8485/namespace-hdfs-ha1</value>
         <description>
             指定namenode的edits元数据在
             JournalNode上的存放位置
@@ -81,7 +78,7 @@
 
     <property>
         <name>dfs.journalnode.edits.dir</name>
-        <value>/home/admin/hadoop-2.8.4/journal_node</value>
+        <value>/home/admin/hadoop-2.8.4/data/journal_node</value>
         <description>指定JournalNode在本地磁盘存放数据的位置</description>
     </property>
 

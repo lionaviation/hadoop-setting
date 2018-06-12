@@ -13,7 +13,7 @@
 
     <property>
         <name>hadoop.tmp.dir</name>
-        <value>/home/admin/hadoop_tmp_dir</value>
+        <value>/home/admin/hadoop-2.8.4/data/hadoop_tmp_dir</value>
     </property>
 
     <property>  
