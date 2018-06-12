@@ -11,9 +11,10 @@
 |192.168.10.104|hadoop-104|nn4(hdfs-ha2)|Y| |Y|Y|
 
 ## 启动过程
-### 1、同步每台服务器的秘钥
+### 1、同步每台服务器的秘钥，以上五台服务器互相可以免密码ssh登录
 
 ### 2、在每台服务器建立目录
+    创建$HADOOP_HOME/data/hadoop_tmp_dir和$HADOOOP_HOME/data/journal_node目录
 
 ### 3、启动Journal Node
 
