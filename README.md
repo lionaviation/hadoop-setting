@@ -11,17 +11,25 @@
 |192.168.10.104|hadoop-104|nn4(hdfs-ha2)|Y| |Y|Y|
 
 ## 启动过程
-### 1、启动Journal Node
+### 1、同步每台服务器的秘钥
+
+### 2、在每台服务器建立目录
+
+### 3、启动Journal Node
 
     hadoopp-daemon.sh start journalnode
     
-### 2、格式化HDFS
+### 4、格式化HDFS
 在nn1执行
 
     hdfs namenode -format
     hadoop-daemon.sh start namenode
     
-在nn3执行(cluster id在nn1格式化后生成，可以在web界面查看"http://hadoop-100:50070")
+查看ClusterID,在nn1执行
+    
+    cat $HADOOP_HOME/data/dfs/name/current/VERSION
+
+cat $HADOOP_HOME/data/dfs/name/current/VERSION
 
     hdfs namenode -format -clusterid <Cluster ID>
     hadoop-daemon.sh start namenode
@@ -34,22 +42,22 @@
 
     hadoop-daemon.sh stop namenode
     
-### 3、格式化ZKFS
+### 5、格式化ZKFS
 在nn1,nn2,nn3和nn4执行
 
     hdfs zkfc -formatZK
     
-### 4、启动zkfc
+### 6、启动zkfc
 在nn1,nn2,nn3和nn4启动zkfc
 
     hadoop-daemon.sh start zkfc
     
-### 5、启动HDFS
+### 7、启动HDFS
 在nn1执行
 
     start-dfs.sh
     
-### 6、为每个命名空间建目录
+### 8、为每个命名空间建目录
 在任意一台一台服务器执行
 
     hdfs dfs -fs hdfs://hadoop-100:9000 -mkdir /tmp
