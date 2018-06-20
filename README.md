@@ -86,4 +86,6 @@ cat $HADOOP_HOME/data/dfs/name/current/VERSION
 
     mr-jobhistory-daemon.sh start historyserver  
     
-注：这里假设hadoop-100和hadoop-102是active状态。
+    
+    
+注：这里假设hadoop-100和hadoop-102中的NameServer是active状态。
