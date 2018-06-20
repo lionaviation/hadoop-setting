@@ -76,7 +76,7 @@ cat $HADOOP_HOME/data/dfs/name/current/VERSION
     hdfs dfs -fs hdfs://hadoop-100:9000 -mkdir /tmp
     hdfs dfs -fs hdfs://hadoop-102:9000 -mkdir /data
     
-### 9、启动yarn
+### 9、启动Yarn
 在任意一台服务器执行
 
     start-yarn.sh
