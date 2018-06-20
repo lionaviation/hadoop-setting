@@ -67,6 +67,16 @@ cat $HADOOP_HOME/data/dfs/name/current/VERSION
 在任意一台一台服务器执行
 
     hdfs dfs -fs hdfs://hadoop-100:9000 -mkdir /tmp
-    hdfs dfs -fs hdfs://hadoop-102:9000 -mkdir /data2
+    hdfs dfs -fs hdfs://hadoop-102:9000 -mkdir /data
+    
+### 9、启动yarn
+在任意一台服务器执行
+
+    start-yarn.sh
+
+### 10、启动History Server
+在hadoop-103执行
+
+    mr-jobhistory-daemon.sh start historyserver  
     
 注：这里假设hadoop-100和hadoop-102是active状态。
