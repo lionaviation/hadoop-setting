@@ -1,11 +1,11 @@
 <configuration>
   <property>
     <name>fs.viewfs.mounttable.myCluster.link./tmp</name>
-    <value>hdfs://hdfs-ha1/tmp</value>
+    <value>hdfs://hdfs-ha1/ha1</value>
   </property>
 
   <property>
-    <name>fs.viewfs.mounttable.myCluster.link./data2</name>
-    <value>hdfs://hdfs-ha2/data2</value>
+    <name>fs.viewfs.mounttable.myCluster.link./data</name>
+    <value>hdfs://hdfs-ha2/ha2</value>
   </property>
 </configuration>

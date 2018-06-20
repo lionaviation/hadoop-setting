@@ -95,6 +95,18 @@
     </property>
 
     <property>
+        <name>dfs.ha.automatic-failover.enabled.hdfs-ha2</name>
+        <value>true</value>
+        <description>开启namenode失败自动切换</description>
+    </property>
+
+    <property>
+        <name>dfs.client.failover.proxy.provider.hdfs-ha2</name>
+        <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+        <description>配置失败自动切换的实现方式</description>
+    </property>
+
+    <property>
         <name>dfs.ha.fencing.methods</name>
 <value>
 sshfence
