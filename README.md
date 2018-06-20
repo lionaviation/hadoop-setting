@@ -55,12 +55,12 @@ cat $HADOOP_HOME/data/dfs/name/current/VERSION
 
     hadoop-daemon.sh stop namenode
     
-### 5、格式化ZKFS
+### 5、格式化ZKFC
 在nn1,nn2,nn3和nn4执行
 
     hdfs zkfc -formatZK
     
-### 6、启动zkfc
+### 6、启动
 在nn1,nn2,nn3和nn4启动zkfc
 
     hadoop-daemon.sh start zkfc
