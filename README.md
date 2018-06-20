@@ -1,4 +1,4 @@
-# Hadoop HDFS(ViewFS) 配置
+# Hadoop HDFS(ViewFS+Yarn) 配置
 
 ## 服务器部署
 
