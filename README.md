@@ -20,6 +20,13 @@
 
 ### 2、在每台服务器建立目录
     创建$HADOOP_HOME/data/hadoop_tmp_dir、$HADOOOP_HOME/data/journal_node和$HADOOP_HOME/data/nodemanager_local_dirs目录
+    
+### 3、在hadooop-102和hadoop-104两台服务器上，将hdfs-site.xml中
+
+    qjournal://hadoop-101:8485;hadoop-102:8485;hadoop-104:8485/namespace-hdfs-ha1
+改为
+
+    qjournal://hadoop-101:8485;hadoop-102:8485;hadoop-104:8485/namespace-hdfs-ha2
 
 ### 3、启动Journal Node
 
